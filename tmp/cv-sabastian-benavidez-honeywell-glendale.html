@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap');
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0.6in;
+            background: white;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        .gradient-line {
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to right, hsl(187,74%,32%), hsl(270,70%,45%));
+            margin: 8px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10px;
+            color: #666;
+        }
+
+        section {
+            margin-bottom: 18px;
+        }
+
+        h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: hsl(187,74%,32%);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+        }
+
+        .summary-text {
+            text-align: justify;
+        }
+
+        .competency-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .competency-tag {
+            background: #f0f4f8;
+            border: 1px solid #d1dce5;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 10px;
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        .experience-item {
+            margin-bottom: 12px;
+        }
+
+        .company-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            color: hsl(270,70%,45%);
+            font-size: 12px;
+        }
+
+        .role-title {
+            font-weight: 500;
+            font-style: italic;
+            color: #444;
+        }
+
+        .date-location {
+            float: right;
+            font-size: 10px;
+            color: #888;
+        }
+
+        ul {
+            margin: 4px 0 0 0;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-category {
+            font-weight: 600;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sabastian Benavidez</h1>
+        <div class="gradient-line"></div>
+        <div class="contact-info">
+            <span>Albuquerque, NM</span>
+            <span>(505) 480-7298</span>
+            <span>Sabastian.j.Benavidez@gmail.com</span>
+            <span>Active Top Secret Clearance</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary-text">
+            MBA Candidate (Finance) and Cleared Analyst specializing in Program Controls, EAC management, and Federal Compliance. Proven track record in executing program baselines and utilizing quantitative modeling (R, Python) to drive operational improvements and ensure cost-schedule integration within secure, high-stakes environments (DCSA). Expert in translating operational needs into technical requirements for program launch and execution.
+        </p>
+    </section>
+
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="competency-grid">
+            <span class="competency-tag">Program Controls</span>
+            <span class="competency-tag">EAC Management</span>
+            <span class="competency-tag">Cost-Schedule Integration</span>
+            <span class="competency-tag">Financial Modeling & Analysis</span>
+            <span class="competency-tag">Budget Baseline Development</span>
+            <span class="competency-tag">Federal Policy Compliance</span>
+            <span class="competency-tag">Process Improvement</span>
+            <span class="competency-tag">Enterprise Workflow Mapping</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <span class="date-location">June 2025 – Present</span>
+            <div class="company-name">Defense Counterintelligence and Security Agency (DCSA)</div>
+            <div class="role-title">Student Intern (Background Investigations)</div>
+            <ul>
+                <li>Spearheads federal compliance initiatives by managing large-scale datasets of sensitive personnel records, ensuring absolute audit readiness under strict security protocols.</li>
+                <li>Leverages financial and economic modeling to evaluate operational workflows and establish performance baselines, identifying process gaps to drive significant operational improvements.</li>
+                <li>Researches and defines functional IT requirements for generative AI integration to streamline investigative workflows and improve program execution.</li>
+                <li>Synthesizes complex intelligence and financial data into strategic operational briefings for internal stakeholders to support informed budgeting and EAC decisions.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <span class="date-location">2016 – 2020</span>
+            <div class="company-name">Freelance Consulting</div>
+            <div class="role-title">Independent Project Manager</div>
+            <ul>
+                <li>Directed end-to-end project lifecycles, managing initial program baselines, operational schedules, and resource allocation to ensure strict delivery milestones.</li>
+                <li>Utilized quantitative analysis and reporting tools to deliver high-impact financial reports and cost-tracking for diverse clients.</li>
+                <li>Translated complex organizational requirements into actionable project plans, optimizing resource utilization and ensuring cost-schedule integration across work-streams.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <span class="date-location">January 2025 – June 2025</span>
+            <div class="company-name">Kelly Education</div>
+            <div class="role-title">Substitute Teacher</div>
+            <ul>
+                <li>Managed rapid operational shifts in educational environments, ensuring continuity of service and meeting strict delivery milestones.</li>
+                <li>Translated complex organizational requirements into actionable directives for diverse groups of 30+ individuals.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="experience-item">
+            <span class="date-location">Expected Spring 2026</span>
+            <div class="company-name">University of New Mexico</div>
+            <div class="role-title">Master of Business Administration (MBA) — Specialization in Finance</div>
+        </div>
+        <div class="experience-item">
+            <div class="company-name">University of New Mexico</div>
+            <div class="role-title">B.S. Business Administration (Marketing & Operations) | GPA: 4.18</div>
+            <div class="role-title">B.S. Economics & History | GPA: 4.08</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div><span class="skills-category">Technical:</span> R, Python, Data Visualization, Microsoft Office Suite (Advanced Excel), Adobe Creative Suite, Generative AI.</div>
+            <div><span class="skills-category">Certifications/Other:</span> Active U.S. Top Secret Clearance, OSINT, PII Data Security.</div>
+        </div>
+    </section>
+</body>
+</html>

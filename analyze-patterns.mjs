@@ -66,13 +66,13 @@ function parseTracker() {
   for (const line of content.split('\n')) {
     if (!line.startsWith('|')) continue;
     const parts = line.split('|').map(s => s.trim());
-    if (parts.length < 9) continue;
-    const num = parseInt(parts[1]);
+    if (parts.length < 11) continue;
+    const num = parseInt(parts[2]);
     if (isNaN(num)) continue;
     entries.push({
-      num, date: parts[2], company: parts[3], role: parts[4],
-      score: parts[5], status: parts[6], pdf: parts[7], report: parts[8],
-      notes: parts[9] || '',
+      num, date: parts[3], company: parts[4], role: parts[5],
+      score: parts[6], status: parts[7], pdf: parts[8], report: parts[9],
+      notes: parts[10] || '',
     });
   }
   return entries;

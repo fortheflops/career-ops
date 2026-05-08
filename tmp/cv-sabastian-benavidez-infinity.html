@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SABASTIAN BENAVIDEZ — Resume</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .contact-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  .cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+
+  .cert-title {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .cert-org {
+    color: hsl(270, 70%, 45%);
+  }
+
+  .cert-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+
+  .skill-item {
+    font-size: 10.5px;
+    color: #444;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+    font-size: 10.5px;
+  }
+
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      padding: 0;
+    }
+  }
+
+  .avoid-break,
+  .job,
+  .project,
+  .edu-item,
+  .cert-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header avoid-break">
+    <h1>SABASTIAN BENAVIDEZ</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>Sabastian.j.Benavidez@gmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://www.linkedin.com/in/sabastian-benavidez-50291b1a9">LinkedIn</a>
+      <span class="separator">|</span>
+      <span>Albuquerque, NM</span>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">Cleared financial and operational analyst and MBA candidate with an Active Top Secret Clearance. Expert in financial modeling, budgeting, and translating complex operational gaps into strategic, actionable solutions for the defense sector. Proven track record in federal compliance and process optimization (DCSA), utilizing quantitative modeling to drive operational improvements and support strategic decision-making in secure environments.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Financial Modeling</span>
+      <span class="competency-tag">Cost Estimation & Pricing</span>
+      <span class="competency-tag">Budgeting & Forecasting</span>
+      <span class="competency-tag">Top Secret Clearance</span>
+      <span class="competency-tag">Quantitative Analysis</span>
+      <span class="competency-tag">Enterprise Workflow Mapping</span>
+      <span class="competency-tag">Federal Policy Compliance</span>
+      <span class="competency-tag">Risk Mitigation</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+    <div class="job avoid-break">
+      <div class="job-header">
+        <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
+        <span class="job-period">June 2025 – Present</span>
+      </div>
+      <div class="job-role">Student Intern (Background Investigations)</div>
+      <div class="job-location">Secure Environment</div>
+      <ul>
+        <li><strong>Financial & Operational Analysis:</strong> Leveraged financial and economic modeling to identify systemic process gaps, driving significant operational improvements and ensuring a continuous "audit-ready" data posture.</li>
+        <li><strong>Technical Requirements Synthesis:</strong> Researched and defined functional IT requirements for generative AI integration to streamline investigative workflows within high-security environments.</li>
+        <li><strong>Federal Compliance & Risk:</strong> Spearheaded compliance initiatives by managing large-scale sensitive datasets under strict security protocols, mitigating risk across the organization.</li>
+        <li><strong>Executive Communication:</strong> Synthesized complex intelligence and operational data into strategic financial and operational briefings for internal stakeholders.</li>
+      </ul>
+    </div>
+    <div class="job avoid-break">
+      <div class="job-header">
+        <span class="job-company">Kelly Education</span>
+        <span class="job-period">January 2025 – June 2025</span>
+      </div>
+      <div class="job-role">Substitute Teacher</div>
+      <div class="job-location">Albuquerque, NM</div>
+      <ul>
+        <li>Managed rapid operational shifts in educational environments, ensuring continuity of service and meeting strict delivery milestones through adaptive leadership.</li>
+        <li>Translated complex organizational requirements into actionable directives for diverse groups of up to 30+ individuals.</li>
+      </ul>
+    </div>
+    <div class="job avoid-break">
+      <div class="job-header">
+        <span class="job-company">Freelance Consulting</span>
+        <span class="job-period">2016 – 2020</span>
+      </div>
+      <div class="job-role">Independent Project Manager</div>
+      <div class="job-location">Remote</div>
+      <ul>
+        <li>Directed end-to-end project lifecycles for diverse clients, managing budgets, operational schedules, and resource allocation to meet strict deliverables.</li>
+        <li>Utilized Adobe Creative Suite and Microsoft Office to deliver high-impact marketing and financial reports, collaborating cross-functionally to ensure alignment.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Projects</div>
+    <div class="project avoid-break">
+      <div class="project-title">Secure GenAI Requirement Framework <span class="project-badge">DCSA</span></div>
+      <div class="project-desc">Developed a functional requirement set for the implementation of generative AI tools within a high-security federal environment, balancing operational efficiency with strict security compliance.</div>
+      <div class="project-tech">Research, Federal Compliance, GenAI, IT Requirements</div>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    <div class="edu-item avoid-break">
+      <div class="edu-header">
+        <span class="edu-title">Master of Business Administration (MBA) — Specialization in Operations</span>
+        <span class="edu-year">Expected Spring 2026</span>
+      </div>
+      <div class="edu-org">University of New Mexico</div>
+    </div>
+    <div class="edu-item avoid-break">
+      <div class="edu-header">
+        <span class="edu-title">B.S. Business Administration (Marketing & Operations) | GPA: 4.18</span>
+        <span class="edu-year">Completed</span>
+      </div>
+      <div class="edu-org">University of New Mexico</div>
+    </div>
+    <div class="edu-item avoid-break">
+      <div class="edu-header">
+        <span class="edu-title">B.S. Economics & History | GPA: 4.08</span>
+        <span class="edu-year">Completed</span>
+      </div>
+      <div class="edu-org">University of New Mexico</div>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Certifications</div>
+    <div class="cert-item avoid-break">
+      <span class="cert-title">Active U.S. Top Secret Clearance</span>
+      <span class="cert-year">Current</span>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+      <div class="skill-item"><span class="skill-category">Defense & Security:</span> Federal Policy Compliance, Threat & Risk Analysis, OSINT, PII Data Security, Audit Readiness</div>
+      <div class="skill-item"><span class="skill-category">Technical:</span> R, Python, Data Visualization, GenAI, MS Office, Adobe Creative Suite</div>
+      <div class="skill-item"><span class="skill-category">Finance & Ops:</span> Financial Modeling, Cost Estimation, Budgeting, Workflow Optimization, Stakeholder Management</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
