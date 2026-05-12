@@ -7,18 +7,20 @@
 <style>
   @font-face {
     font-family: 'Space Grotesk';
-    src: url('../fonts/space-grotesk-latin.woff2') format('woff2');
+    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
   @font-face {
     font-family: 'DM Sans';
-    src: url('../fonts/dm-sans-latin.woff2') format('woff2');
+    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
   * {
@@ -46,9 +48,10 @@
     width: 100%;
     max-width: 8.5in;
     margin: 0 auto;
-    padding: 40px;
+    padding: 0.6in;
   }
 
+  /* === HEADER === */
   .header {
     margin-bottom: 20px;
   }
@@ -89,6 +92,7 @@
     color: #ccc;
   }
 
+  /* === SECTIONS === */
   .section {
     margin-bottom: 18px;
   }
@@ -106,12 +110,14 @@
     line-height: 1.2;
   }
 
+  /* === PROFESSIONAL SUMMARY === */
   .summary-text {
     font-size: 11px;
     line-height: 1.7;
     color: #2f2f2f;
   }
 
+  /* === CORE COMPETENCIES === */
   .competencies-grid {
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +135,7 @@
     border: 1px solid hsl(187, 40%, 88%);
   }
 
+  /* === WORK EXPERIENCE === */
   .job {
     margin-bottom: 14px;
   }
@@ -173,10 +180,7 @@
     margin-bottom: 4px;
   }
 
-  .job li strong {
-    font-weight: 600;
-  }
-
+  /* === EDUCATION === */
   .edu-item {
     margin-bottom: 8px;
   }
@@ -205,6 +209,14 @@
     white-space: nowrap;
   }
 
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  /* === SKILLS === */
   .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -222,7 +234,13 @@
     font-size: 10.5px;
   }
 
+  /* === PRINT === */
   @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
     .page {
       padding: 0;
     }
@@ -237,8 +255,9 @@
 <body>
 <div class="page">
 
+  <!-- HEADER -->
   <div class="header avoid-break">
-    <h1>Sabastian Benavidez</h1>
+    <h1>SABASTIAN BENAVIDEZ</h1>
     <div class="header-gradient"></div>
     <div class="contact-row">
       <span>(505) 480-7298</span>
@@ -247,109 +266,108 @@
       <span class="separator">|</span>
       <span>Albuquerque, NM</span>
       <span class="separator">|</span>
-      <span>Active Top Secret Clearance</span>
+      <strong>Active U.S. Top Secret Clearance</strong>
     </div>
   </div>
 
+  <!-- PROFESSIONAL SUMMARY -->
   <div class="section avoid-break">
     <div class="section-title">Professional Summary</div>
     <div class="summary-text">
-      MBA Candidate specializing in Finance with an Active Top Secret Clearance and federal operational experience at the DCSA. Proven expertise in support of Stockpile Sustainment missions through budget formulation, PPBE cycle management, and variance analysis. Expert in translating complex operational workflows into actionable financial requirements and budget justifications to drive program efficiencies and audit readiness within secure environments.
+      Global Supply & Procurement Lead and MBA Candidate specializing in Finance with an <strong>Active Top Secret Clearance</strong>. Expert in mapping complex enterprise workflows and translating operational needs into technical requirements. Proven track record at DCSA in driving audit-ready compliance and cost efficiencies, combined with 4 years of independent project management experience managing budgets and high-impact reports. Specialized in <strong>SG&A spend optimization</strong> and <strong>contingent labor strategy</strong> within high-stakes secure environments.
     </div>
   </div>
 
+  <!-- CORE COMPETENCIES -->
   <div class="section">
     <div class="section-title">Core Competencies</div>
     <div class="competencies-grid">
-      <span class="competency-tag">Program Budget Analysis</span>
-      <span class="competency-tag">PPBE Cycle Management</span>
-      <span class="competency-tag">Active Top Secret Clearance</span>
-      <span class="competency-tag">NNSA Mission Support</span>
-      <span class="competency-tag">Variance Analysis & Reporting</span>
-      <span class="competency-tag">Budget Formulation & Justification</span>
-      <span class="competency-tag">Federal Policy Compliance</span>
-      <span class="competency-tag">Quantitative Financial Modeling</span>
+      <span class="competency-tag">Strategic Sourcing & Procurement</span>
+      <span class="competency-tag">Contract Lifecycle Management</span>
+      <span class="competency-tag">TCO & Cost Reduction Modeling</span>
+      <span class="competency-tag">Contingent Labor Strategy</span>
+      <span class="competency-tag">Enterprise Workflow Optimization</span>
+      <span class="competency-tag">Financial Modeling (R/Python)</span>
+      <span class="competency-tag">Federal Policy & Audit Readiness</span>
+      <span class="competency-tag">Cross-functional Stakeholder Mgmt</span>
     </div>
   </div>
 
+  <!-- WORK EXPERIENCE -->
   <div class="section">
     <div class="section-title">Work Experience</div>
+
     <div class="job">
       <div class="job-header">
-        <div class="job-company">Defense Counterintelligence and Security Agency (DCSA)</div>
-        <div class="job-period">June 2025 – Present</div>
+        <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
+        <span class="job-period">June 2025 – Present</span>
       </div>
       <div class="job-role">Student Intern (Background Investigations)</div>
       <ul>
-        <li><strong>Budget & Operational Alignment:</strong> Evaluated existing operational workflows and applied analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with federal guidelines for background investigation programs.</li>
-        <li><strong>Functional Requirements Gathering:</strong> Gathered and documented technical requirements for generative AI implementations to optimize secure internal procedures and financial activity tracking.</li>
-        <li><strong>Audit Readiness:</strong> Maintained an 'audit-ready' posture by ensuring all analytical findings and operational workflows adhered to rigorous federal data security and PII standards.</li>
+        <li><strong>Sourcing Compliance:</strong> Evaluated operational workflows and applied rigorous analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with federal guidelines.</li>
+        <li><strong>Requirements Engineering:</strong> Actively researched and gathered functional requirements for generative AI implementations to bridge technical potential with secure operational missions.</li>
+        <li><strong>Audit Readiness:</strong> Maintained an "audit-ready" data posture, identifying systemic bottlenecks that impacted resource allocation and supplier performance.</li>
       </ul>
     </div>
 
     <div class="job">
       <div class="job-header">
-        <div class="job-company">Kelly Education</div>
-        <div class="job-period">January 2025 – June 2025</div>
+        <span class="job-company">Kelly Education</span>
+        <span class="job-period">January 2025 – June 2025</span>
       </div>
-      <div class="job-role">Substitute Teacher</div>
+      <div class="job-role">Substitute Teacher (Operational Insight: Contingent Labor)</div>
       <ul>
-        <li>Managed rapid operational shifts in high-pressure environments, ensuring continuity of service and meeting strict delivery milestones.</li>
-        <li>Translated complex organizational requirements into actionable directives for diverse stakeholders, ensuring mission-critical objectives were met.</li>
+        <li><strong>Service Continuity:</strong> Managed rapid operational shifts in complex environments, ensuring continuity of service and meeting strict delivery milestones within a contingent staffing framework.</li>
+        <li><strong>Directive Translation:</strong> Translated complex organizational requirements into actionable directives for diverse stakeholders, optimizing "on-the-ground" talent performance.</li>
       </ul>
     </div>
 
     <div class="job">
       <div class="job-header">
-        <div class="job-company">Freelance Consulting</div>
-        <div class="job-period">2016 – 2020</div>
+        <span class="job-company">Freelance Consulting</span>
+        <span class="job-period">2016 – 2020</span>
       </div>
       <div class="job-role">Independent Project Manager</div>
       <ul>
-        <li>Directed end-to-end project lifecycles, managing budgets, operational schedules, and resource allocation for diverse portfolios.</li>
-        <li>Utilized advanced MS Office and data visualization tools to deliver high-impact financial reports and budget justifications under tight deadlines.</li>
+        <li><strong>Contract & Budget Mgmt:</strong> Directed end-to-end project lifecycles for diverse clients, managing budgets, operational schedules, and vendor resource allocation.</li>
+        <li><strong>ROI Analysis:</strong> Utilized Adobe Creative Suite and Microsoft Office to deliver high-impact marketing and financial reports, focusing on cost-benefit analysis and strategic value propositions.</li>
       </ul>
     </div>
   </div>
 
+  <!-- EDUCATION -->
   <div class="section avoid-break">
     <div class="section-title">Education</div>
     <div class="edu-item">
       <div class="edu-header">
-        <div class="edu-title">Master of Business Administration (MBA) — <span class="edu-org">Finance</span></div>
-        <div class="edu-year">Expected 2026</div>
+        <span class="edu-title">Master of Business Administration (MBA) — <span class="edu-org">Specialization in Finance</span></span>
+        <span class="edu-year">Expected Spring 2026</span>
       </div>
-      <div class="edu-org">University of New Mexico</div>
+      <div class="edu-desc">University of New Mexico, Albuquerque, NM</div>
     </div>
     <div class="edu-item">
       <div class="edu-header">
-        <div class="edu-title">B.S. Business Administration — <span class="edu-org">Marketing & Operations</span></div>
-        <div class="edu-year">GPA: 4.18</div>
+        <span class="edu-title">B.S. Business Administration — <span class="edu-org">Marketing & Operations</span></span>
+        <span class="edu-year">GPA: 4.18</span>
       </div>
-      <div class="edu-org">University of New Mexico</div>
+      <div class="edu-desc">University of New Mexico, Albuquerque, NM</div>
     </div>
     <div class="edu-item">
       <div class="edu-header">
-        <div class="edu-title">B.S. Economics & History</div>
-        <div class="edu-year">GPA: 4.08</div>
+        <span class="edu-title">B.S. Economics & History</span>
+        <span class="edu-year">GPA: 4.08</span>
       </div>
-      <div class="edu-org">University of New Mexico</div>
+      <div class="edu-desc">University of New Mexico, Albuquerque, NM</div>
     </div>
   </div>
 
+  <!-- SKILLS -->
   <div class="section avoid-break">
     <div class="section-title">Technical Skills</div>
     <div class="skills-grid">
-      <div class="skill-item"><span class="skill-category">Tools:</span> Python, R, MS Excel (Expert), PowerPoint, SQL, Adobe Creative Suite</div>
-      <div class="skill-item"><span class="skill-category">Compliance:</span> PII Security, OSINT, Federal Policy, DCSA Standards</div>
-      <div class="skill-item"><span class="skill-category">Financial:</span> Quantitative Modeling, Risk Management, Supply Chain Optimization</div>
-    </div>
-  </div>
-
-  <div class="section avoid-break">
-    <div class="section-title">Affiliations & Honors</div>
-    <div class="summary-text">
-      Omicron Delta Epsilon (Economics Honor Society), The National Society of Leadership and Success, National Society of Collegiate Scholars, Golden Key International Honor Society.
+      <div class="skill-item"><span class="skill-category">Analysis:</span> R, Python, Financial Modeling, TCO Analysis, Quantitative Sourcing</div>
+      <div class="skill-item"><span class="skill-category">Tools:</span> Microsoft 365 (Expert Excel/PPT), Power BI (Aptitude), Adobe Creative Suite</div>
+      <div class="skill-item"><span class="skill-category">Ops:</span> Contract Lifecycle Mgmt, Workflow Mapping, Indirect Sourcing, ITAR Compliance</div>
     </div>
   </div>
 
