@@ -66,7 +66,7 @@ function parseTracker() {
   for (const line of content.split('\n')) {
     if (!line.startsWith('|')) continue;
     const parts = line.split('|').map(s => s.trim());
-    if (parts.length < 10) continue;
+    if (parts.length < 9) continue;
     const num = parseInt(parts[1]);
     if (isNaN(num)) continue;
     entries.push({
