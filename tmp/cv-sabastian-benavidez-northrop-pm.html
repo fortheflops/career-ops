@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sabastian Benavidez — CV</title>
+<title>SABASTIAN BENAVIDEZ — CV</title>
 <style>
   @font-face {
     font-family: 'Space Grotesk';
@@ -135,6 +135,7 @@
     color: #2f2f2f;
   }
 
+  /* Links must never break across lines */
   a {
     white-space: nowrap;
   }
@@ -284,8 +285,8 @@
 
   /* === CERTIFICATIONS === */
   .cert-item {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(90px, max-content) 44px;
     align-items: baseline;
     gap: 12px;
     margin-bottom: 6px;
@@ -295,16 +296,19 @@
     font-size: 10.5px;
     font-weight: 500;
     color: #333;
+    min-width: 0;
   }
 
   .cert-org {
     color: hsl(270, 70%, 45%);
+    white-space: nowrap;
   }
 
   .cert-year {
     font-size: 10px;
     color: #777;
     white-space: nowrap;
+    text-align: right;
   }
 
   /* === SKILLS === */
@@ -325,6 +329,7 @@
     font-size: 10.5px;
   }
 
+  /* === PRINT === */
   @media print {
     body {
       -webkit-print-color-adjust: exact;
@@ -336,6 +341,7 @@
     }
   }
 
+  /* === PAGE BREAK CONTROL === */
   .avoid-break,
   .job,
   .project,
@@ -351,13 +357,16 @@
 
   <!-- HEADER -->
   <div class="header avoid-break">
-    <h1>Sabastian Benavidez</h1>
+    <h1>SABASTIAN BENAVIDEZ</h1>
     <div class="header-gradient"></div>
     <div class="contact-row">
+      <span>(505) 480-7298</span>
+      <span class="separator">|</span>
       <span>Sabastian.j.Benavidez@gmail.com</span>
       <span class="separator">|</span>
-      <a href="www.linkedin.com/in/sabastian-benavidez-50291b1a9">LinkedIn</a>
-      
+      <a href="#">linkedin.com/in/sabastian-benavidez</a>
+      <span class="separator">|</span>
+      <a href="#">portfolio.dev/sabastian</a>
       <span class="separator">|</span>
       <span>Albuquerque, NM</span>
     </div>
@@ -366,114 +375,109 @@
   <!-- PROFESSIONAL SUMMARY -->
   <div class="section avoid-break">
     <div class="section-title">Professional Summary</div>
-    <div class="summary-text">TS-Cleared Financial Analyst specializing in project performance and federal regulatory compliance. Expert in mapping enterprise workflows and implementing Earned Value Management (EVM) principles to drive budget accuracy and risk mitigation within high-security defense environments. Leveraging an MBA in Operations and a track record of federal policy adherence to ensure financial integrity and contract success.</div>
+    <div class="summary-text">Operations Support & Project Management Professional with an <strong>Active Top Secret Clearance</strong> and an MBA in progress. Expert in maintaining the <strong>Strategic Rhythm</strong> of complex programs through rigorous lifecycle management, metrics analysis, and cross-functional integration. Proven track record in secure federal environments (DCSA), translating operational gaps into technical requirements and ensuring <strong>configuration control of data</strong>. Adept at leveraging the Atlassian Suite and Microsoft Office to drive program visibility and stakeholder satisfaction.</div>
   </div>
 
   <!-- CORE COMPETENCIES -->
   <div class="section">
     <div class="section-title">Core Competencies</div>
     <div class="competencies-grid">
-      <span class="competency-tag">Earned Value Management (EVM)</span>
-      <span class="competency-tag">Variance Analysis</span>
-      <span class="competency-tag">Financial Modeling</span>
-      <span class="competency-tag">Budget Tracking & Control</span>
-      <span class="competency-tag">Federal Regulatory Compliance</span>
-      <span class="competency-tag">Risk Mitigation</span>
-      <span class="competency-tag">Audit Readiness</span>
-      <span class="competency-tag">Top Secret Clearance</span>
+      <span class="competency-tag">Program Integration & Execution</span>
+      <span class="competency-tag">Strategic Rhythm Management</span>
+      <span class="competency-tag">Operational Metrics & Analysis</span>
+      <span class="competency-tag">Active Top Secret Clearance</span>
+      <span class="competency-tag">Jira & Confluence Proficiency</span>
+      <span class="competency-tag">Federal Compliance & Audit</span>
+      <span class="competency-tag">Configuration Data Control</span>
     </div>
   </div>
 
   <!-- WORK EXPERIENCE -->
   <div class="section">
     <div class="section-title">Work Experience</div>
-    <div class="job">
-      <div class="job-header">
-        <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
-        <span class="job-period">June 2025 – Present</span>
-      </div>
-      <div class="job-role">Student Intern (Background Investigations)</div>
-      <ul>
-        <li>Evaluated existing operational workflows and applied rigorous analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with federal guidelines</li>
-        <li>Drove efficiency by actively researching and gathering functional requirements for generative AI implementations.</li>
-      </ul>
+    
+  <div class="job">
+    <div class="job-header">
+      <div class="job-company">Defense Counterintelligence and Security Agency (DCSA)</div>
+      <div class="job-period">June 2025 – Present</div>
     </div>
-    <div class="job">
-      <div class="job-header">
-        <span class="job-company">Kelly Education</span>
-        <span class="job-period">Jan 2025 – June 2025</span>
-      </div>
-      <div class="job-role">Substitute Teacher</div>
-      <ul>
-        <li>Managed rapid operational shifts in educational environments, ensuring continuity of service and meeting strict delivery milestones.</li>
-      </ul>
+    <div class="job-role">Program Operations & Compliance Intern</div>
+    <ul>
+      <li><strong>Operational Integration:</strong> Evaluated complex workflows and identified process gaps in secure environments, driving cost efficiencies while ensuring 100% compliance with federal security guidelines.</li>
+      <li><strong>Configuration Control:</strong> Researched functional requirements for generative AI implementations, maintaining detailed logs and documentation to ensure data integrity and program visibility.</li>
+      <li><strong>Stakeholder Support:</strong> Supported leadership by translating operational needs into technical specifications, facilitating the strategic rhythm of new system implementations.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-company">Kelly Education</div>
+      <div class="job-period">January 2025 – June 2025</div>
     </div>
-    <div class="job">
-      <div class="job-header">
-        <span class="job-company">Freelance Consulting</span>
-        <span class="job-period">2016 – 2020</span>
-      </div>
-      <div class="job-role">Independent Project Manager (Media)</div>
-      <ul>
-        <li>Directed end-to-end media project lifecycles for diverse clients, managing resource allocation, creative scheduling, and deliverable timelines to ensure 100% on-time delivery.</li>
-      </ul>
+    <div class="job-role">Project & Instructional Lead</div>
+    <ul>
+      <li><strong>Execution Excellence:</strong> Managed rapid operational shifts in high-pressure environments, ensuring continuity of service and meeting strict delivery milestones for diverse groups of 30+.</li>
+      <li><strong>Communication:</strong> Translated complex organizational directives into actionable project plans, maintaining a consistent cadence and high stakeholder engagement.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-company">Freelance Consulting</div>
+      <div class="job-period">2016 – 2020</div>
     </div>
+    <div class="job-role">Independent Project Manager</div>
+    <ul>
+      <li><strong>Lifecycle Management:</strong> Directed end-to-end project lifecycles for diverse clients, owning material development, budgets, and operational schedules from initiation to delivery.</li>
+      <li><strong>Visibility & Reporting:</strong> Developed and implemented tools for monitoring project progress, delivering high-impact status reports to executive-level stakeholders.</li>
+    </ul>
+  </div>
+
   </div>
 
   <!-- PROJECTS -->
   <div class="section avoid-break">
-    <div class="section-title">Projects</div>
-    <div class="project">
-      <div class="project-title">Generative AI for Federal Workflows <span class="project-badge">Compliance</span></div>
-      <div class="project-desc">Developed functional requirements for AI-assisted regulatory oversight, focusing on streamlining investigative paths and automated financial auditing in secure environments.</div>
-      <div class="project-tech">GenAI, Requirements Engineering, Federal Compliance</div>
-    </div>
+    <div class="section-title">Program Impact</div>
+    <div class="project"><div class="project-title">Secure Workflow Optimization (DCSA)</div><div class="project-desc">Re-engineered operational workflows within a secure federal environment, identifying critical process gaps and establishing new configuration controls for AI-assisted auditing tools.</div></div>
   </div>
 
   <!-- EDUCATION -->
   <div class="section avoid-break">
     <div class="section-title">Education</div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <span class="edu-title">Master of Business Administration (MBA) — Specialization in Finance</span>
-        <span class="edu-year">Graduated</span>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
+    
+  <div class="edu-item">
+    <div class="edu-header">
+      <div class="edu-title">Master of Business Administration (MBA) — <span class="edu-org">University of New Mexico</span></div>
+      <div class="edu-year">Expected 2026</div>
     </div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <span class="edu-title">B.S. Business Administration — Marketing & Operations (GPA: 4.18)</span>
-        <span class="edu-year">May 2024</span>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
+    <div class="edu-desc">Specialization in Operations. GPA: 4.18 (B.S. Business Administration).</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <div class="edu-title">B.S. Economics & History — <span class="edu-org">University of New Mexico</span></div>
+      <div class="edu-year">2024</div>
     </div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <span class="edu-title">B.S. Economics & History (GPA: 4.08)</span>
-        <span class="edu-year">May 2024</span>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
-    </div>
+    <div class="edu-desc">GPA: 4.08. Omicron Delta Epsilon Honor Society.</div>
+  </div>
 
   </div>
 
   <!-- CERTIFICATIONS -->
   <div class="section avoid-break">
-    <div class="section-title">Certifications</div>
-    <div class="cert-item">
-      <span class="cert-title">Omicron Delta Epsilon</span>
-      <span class="cert-org">Economics Honor Society</span>
-      <span class="cert-year">2024</span>
-    </div>
+    <div class="section-title">Affiliations</div>
+    <div class="cert-item"><div class="cert-title">National Society of Leadership and Success</div><div class="cert-org">NSLS</div><div class="cert-year">2022</div></div>
   </div>
 
   <!-- SKILLS -->
   <div class="section avoid-break">
-    <div class="section-title">Skills</div>
-    <div class="skills-grid">
-      <div class="skill-item"><span class="skill-category">Technical:</span> R, Python, Data Visualization, Microsoft Office (Advanced Excel), Adobe Creative Suite</div>
-      <div class="skill-item"><span class="skill-category">Compliance:</span> Federal Policy, EVM Principles, OSINT, PII Data Security, Risk Mitigation</div>
-    </div>
+    <div class="section-title">Skills & Tools</div>
+    
+  <div class="skills-grid">
+    <div class="skill-item"><span class="skill-category">Project Tools:</span> Jira, Confluence, Microsoft SharePoint, MS Project, Office Suite (Expert Excel/PPT).</div>
+    <div class="skill-item"><span class="skill-category">Methodologies:</span> Program Management Framework (PMF), Agile/Scrum, Workflow Mapping, Configuration Control.</div>
+    <div class="skill-item"><span class="skill-category">Analytics:</span> R, Python, Quantitative Modeling, Metrics & Dashboard Development.</div>
+  </div>
+
   </div>
 
 </div>

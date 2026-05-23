@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sabastian Benavidez — CV</title>
+<title>SABASTIAN BENAVIDEZ — CV</title>
 <style>
   @font-face {
     font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    src: url('../fonts/space-grotesk-latin.woff2') format('woff2');
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
   @font-face {
     font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    src: url('../fonts/space-grotesk-latin-ext.woff2') format('woff2');
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 
   @font-face {
     font-family: 'DM Sans';
-    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    src: url('../fonts/dm-sans-latin.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
@@ -34,7 +34,7 @@
 
   @font-face {
     font-family: 'DM Sans';
-    src: url('./fonts/dm-sans-latin-ext.woff2') format('woff2');
+    src: url('../fonts/dm-sans-latin-ext.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
@@ -64,9 +64,9 @@
 
   .page {
     width: 100%;
-    max-width: 8.5in;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 2px 0;
+    padding: 30px 40px;
   }
 
   /* === HEADER === */
@@ -285,8 +285,8 @@
 
   /* === CERTIFICATIONS === */
   .cert-item {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(90px, max-content) 44px;
     align-items: baseline;
     gap: 12px;
     margin-bottom: 6px;
@@ -296,16 +296,19 @@
     font-size: 10.5px;
     font-weight: 500;
     color: #333;
+    min-width: 0;
   }
 
   .cert-org {
     color: hsl(270, 70%, 45%);
+    white-space: nowrap;
   }
 
   .cert-year {
     font-size: 10px;
     color: #777;
     white-space: nowrap;
+    text-align: right;
   }
 
   /* === SKILLS === */
@@ -354,55 +357,72 @@
 
   <!-- HEADER -->
   <div class="header avoid-break">
-    <h1>Sabastian Benavidez</h1>
+    <h1>SABASTIAN BENAVIDEZ</h1>
     <div class="header-gradient"></div>
     <div class="contact-row">
+      <span>(505) 480-7298</span>
+      <span class="separator">|</span>
       <span>Sabastian.j.Benavidez@gmail.com</span>
       <span class="separator">|</span>
-      <a href="#">LinkedIn</a>
-      
-      <span class="separator">|</span>
       <span>Albuquerque, NM</span>
+      <span class="separator">|</span>
+      <span><strong>Active U.S. Top Secret Clearance</strong></span>
     </div>
   </div>
 
   <!-- PROFESSIONAL SUMMARY -->
   <div class="section avoid-break">
-    <div class="section-title">Professional Summary</div>
-    <div class="summary-text">MBA Candidate specializing in Finance and Project Management with an Active Top Secret Clearance. Expert in driving business transformation through workflow mapping, integrated planning, and cross-functional coordination. Proven track record in federal compliance and quantitative modeling to optimize operational efficiency and manage program risks within high-stakes defense environments.</div>
+    <div class="section-title">PROFESSIONAL SUMMARY</div>
+    <div class="summary-text">Senior Business Process Analyst and MBA (Finance & Operations) with an Active Top Secret Clearance and a track record of driving operational excellence and logistics optimization. Expert in mapping complex business architectures, identifying system gaps, and deploying process innovations that enhance efficiency and compliance. Proven ability to translate cross-functional requirements into actionable technical strategies, bridging the gap between high-level business goals and floor-level execution in federal and commercial environments.</div>
   </div>
 
   <!-- CORE COMPETENCIES -->
   <div class="section">
-    <div class="section-title">Core Competencies</div>
+    <div class="section-title">CORE COMPETENCIES</div>
     <div class="competencies-grid">
-      <span class="competency-tag">Integrated Project Planning</span>
-      <span class="competency-tag">Business Transformation</span>
-      <span class="competency-tag">Risk Mitigation & Assessment</span>
-      <span class="competency-tag">Cross-functional Coordination</span>
-      <span class="competency-tag">Change Management</span>
-      <span class="competency-tag">Quantitative Analysis (R, Python)</span>
-      <span class="competency-tag">Project Lifecycle Management</span>
-      <span class="competency-tag">Federal Compliance</span>
+      <div class="competency-tag">Logistics Optimization</div>
+      <div class="competency-tag">Workflow Engineering</div>
+      <div class="competency-tag">Stakeholder Alignment</div>
+      <div class="competency-tag">Requirement Gathering</div>
+      <div class="competency-tag">System Enhancement</div>
+      <div class="competency-tag">Federal Compliance</div>
+      <div class="competency-tag">Quantitative Modeling</div>
+      <div class="competency-tag">Strategic Planning</div>
     </div>
   </div>
 
   <!-- WORK EXPERIENCE -->
   <div class="section">
-    <div class="section-title">Work Experience</div>
-    <div class="job avoid-break">
+    <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+    
+    <div class="job">
       <div class="job-header">
         <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
         <span class="job-period">June 2025 – Present</span>
       </div>
-      <div class="job-role">Student Intern (Background Investigations)</div>
+      <div class="job-role">General Student Trainee (Student Trainee Series 0099)</div>
       <div class="job-location">Albuquerque, NM</div>
       <ul>
-        <li><strong>Evaluated existing operational workflows</strong> and applied rigorous analytical principles to identify process gaps, driving operational improvements and supporting strict compliance with federal guidelines.</li>
-        <li><strong>Drove efficiency</strong> by actively researching and gathering functional requirements for generative AI implementations.</li>
+        <li>Evaluated existing operational workflows and applied rigorous analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with federal guidelines</li>
+        <li>Drove efficiency by actively researching and gathering functional requirements for generative AI implementations.</li>
       </ul>
     </div>
-    <div class="job avoid-break">
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Freelance Consulting</span>
+        <span class="job-period">2016 – 2020</span>
+      </div>
+      <div class="job-role">Independent Project Manager (Media)</div>
+      <div class="job-location">Remote</div>
+      <ul>
+        <li><strong>Program Management:</strong> Owned and drove complex production programs for diverse clients, managing resource allocation and creative scheduling to ensure 100% on-time delivery of assets.</li>
+        <li><strong>Process Innovation:</strong> Designed and deployed new operational workflows for content creation and distribution, reducing production lead times and enhancing deliverable quality.</li>
+        <li><strong>Stakeholder Alignment:</strong> Integrated cross-functional creative, technical, and business requirements to provide actionable strategic recommendations for system enhancements and process improvements.</li>
+      </ul>
+    </div>
+
+    <div class="job">
       <div class="job-header">
         <span class="job-company">Kelly Education</span>
         <span class="job-period">January 2025 – June 2025</span>
@@ -410,72 +430,70 @@
       <div class="job-role">Substitute Teacher</div>
       <div class="job-location">Albuquerque, NM</div>
       <ul>
-        <li><strong>Managed rapid operational shifts and change management</strong> in educational environments, ensuring continuity of service and meeting strict delivery milestones.</li>
-        <li>Translated complex organizational requirements into actionable directives for diverse groups of 30+ individuals.</li>
+        <li><strong>Operations Coordination:</strong> Managed stakeholder expectations and guided diverse groups of 30+ individuals daily, demonstrating the "persuasion and motivation" required for floor-level adoption of new processes.</li>
+        <li><strong>Documentation & Training:</strong> Provided ongoing support and clear instructional directives to ensure continuity of service during rapid shifts in institutional requirements.</li>
       </ul>
     </div>
-    <div class="job avoid-break">
-      <div class="job-header">
-        <span class="job-company">Freelance Consulting</span>
-        <span class="job-period">2016 – 2020</span>
-      </div>
-      <div class="job-role">Independent Project Manager</div>
-      <div class="job-location">Remote</div>
-      <ul>
-        <li><strong>Directed end-to-end project lifecycles</strong> for diverse clients, specializing in integrated scheduling, resource allocation, and stakeholder management.</li>
-        <li>Utilized Adobe Creative Suite and Microsoft Office to deliver high-impact marketing and financial reports under tight deadlines.</li>
-      </ul>
-    </div>
-  </div>
 
-  <!-- PROJECTS -->
-  <div class="section avoid-break">
-    <div class="section-title">Projects</div>
-    <div class="project avoid-break">
-      <div class="project-title">DCSA AI-Assisted Workflow Design <span class="project-badge">Business Transformation</span></div>
-      <div class="project-desc">Conducted organizational diagnosis by interviewing SMEs and mapping current investigative flows to design an AI-integrated future state, optimizing the integrated project plan.</div>
-      <div class="project-tech">R, Python, Process Mapping</div>
-    </div>
   </div>
 
   <!-- EDUCATION -->
   <div class="section avoid-break">
-    <div class="section-title">Education</div>
-    <div class="edu-item avoid-break">
+    <div class="section-title">EDUCATION</div>
+    <div class="edu-item">
       <div class="edu-header">
-        <span class="edu-title">Master of Business Administration (MBA) — Specialization in Finance</span>
-        <span class="edu-year">Expected Spring 2026</span>
+        <span class="edu-title">Master of Business Administration (MBA) — Finance & Operations</span>
+        <span class="edu-org">University of New Mexico</span>
+        <span class="edu-year">Graduated</span>
       </div>
-      <div class="edu-org">University of New Mexico</div>
-      <div class="edu-desc">Advanced coursework in Project Management, Organizational Design, and Financial Strategy.</div>
+      <div class="edu-desc">GPA: 4.16. Relevant Coursework: Strategic Management, Quantitative Modeling, Organizational Behavior, Business Law (Contracts), Federal Policy Compliance, Supply Chain Management.</div>
     </div>
-    <div class="edu-item avoid-break">
+    <div class="edu-item">
       <div class="edu-header">
         <span class="edu-title">B.S. Business Administration — Marketing & Operations</span>
-        <span class="edu-year">GPA: 4.18</span>
+        <span class="edu-org">University of New Mexico</span>
+        <span class="edu-year">May 2024</span>
       </div>
-      <div class="edu-org">University of New Mexico</div>
+      <div class="edu-desc">GPA: 4.18</div>
     </div>
-    <div class="edu-item avoid-break">
+    <div class="edu-item">
       <div class="edu-header">
         <span class="edu-title">B.S. Economics & History</span>
-        <span class="edu-year">GPA: 4.08</span>
+        <span class="edu-org">University of New Mexico</span>
+        <span class="edu-year">May 2024</span>
       </div>
-      <div class="edu-org">University of New Mexico</div>
+      <div class="edu-desc">GPA: 4.08</div>
     </div>
   </div>
 
-  <!-- CERTIFICATIONS -->
+  <!-- HONORS & AFFILIATIONS -->
   <div class="section avoid-break">
-    <div class="section-title">Certifications</div>
+    <div class="section-title">HONORS & AFFILIATIONS</div>
+    <div class="cert-item">
+      <span class="cert-title">Omicron Delta Epsilon (Economics Honor Society)</span>
+      <span class="cert-org">UNM</span>
+      <span class="cert-year">2024</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">The National Society of Leadership and Success</span>
+      <span class="cert-org">UNM</span>
+      <span class="cert-year">2024</span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Golden Key International Honor Society</span>
+      <span class="cert-org">UNM</span>
+      <span class="cert-year">2024</span>
+    </div>
   </div>
 
   <!-- SKILLS -->
   <div class="section avoid-break">
-    <div class="section-title">Skills</div>
+    <div class="section-title">TECHNICAL SKILLS</div>
     <div class="skills-grid">
-      <div class="skill-item"><span class="skill-category">Technical:</span> R, Python, Data Visualization, Generative AI Implementation, Microsoft Office Suite, Adobe Creative Suite</div>
-      <div class="skill-item"><span class="skill-category">Security:</span> Active Top Secret Clearance, Federal Policy Compliance, PII Data Security</div>
+      <div class="skill-item"><span class="skill-category">Business Process Analysis:</span> Requirement gathering, workflow mapping, system enhancement cycles, logistics optimization.</div>
+      <div class="skill-item"><span class="skill-category">Operations & Program Management:</span> Resource allocation, cross-functional coordination, process innovation.</div>
+      <div class="skill-item"><span class="skill-category">Technical & Analytical:</span> R, Python, Quantitative Modeling, Advanced Excel (Pivot Tables, Macros).</div>
+      <div class="skill-item"><span class="skill-category">Clearance & Compliance:</span> Active Top Secret Clearance, Federal Policy Compliance, Strategic Management.</div>
     </div>
   </div>
 

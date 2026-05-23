@@ -11,16 +11,6 @@
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
-  @font-face {
-    font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
-    font-weight: 300 700;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
   }
 
   @font-face {
@@ -29,16 +19,6 @@
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
-  @font-face {
-    font-family: 'DM Sans';
-    src: url('./fonts/dm-sans-latin-ext.woff2') format('woff2');
-    font-weight: 100 1000;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
   }
 
   * {
@@ -135,11 +115,6 @@
     color: #2f2f2f;
   }
 
-  /* Links must never break across lines */
-  a {
-    white-space: nowrap;
-  }
-
   /* === CORE COMPETENCIES === */
   .competencies-grid {
     display: flex;
@@ -191,11 +166,6 @@
     margin-bottom: 6px;
   }
 
-  .job-location {
-    font-size: 10px;
-    color: #888;
-  }
-
   .job ul {
     padding-left: 18px;
     margin-top: 6px;
@@ -206,45 +176,6 @@
     line-height: 1.6;
     color: #333;
     margin-bottom: 4px;
-  }
-
-  .job li strong {
-    font-weight: 600;
-  }
-
-  /* === PROJECTS === */
-  .project {
-    margin-bottom: 12px;
-  }
-
-  .project-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 11.5px;
-    font-weight: 600;
-    color: hsl(270, 70%, 45%);
-  }
-
-  .project-badge {
-    font-size: 9px;
-    font-weight: 500;
-    color: hsl(187, 74%, 32%);
-    background: hsl(187, 40%, 95%);
-    padding: 1px 6px;
-    border-radius: 2px;
-    margin-left: 6px;
-  }
-
-  .project-desc {
-    font-size: 10.5px;
-    color: #444;
-    margin-top: 3px;
-    line-height: 1.55;
-  }
-
-  .project-tech {
-    font-size: 9.5px;
-    color: #888;
-    margin-top: 3px;
   }
 
   /* === EDUCATION === */
@@ -276,38 +207,6 @@
     white-space: nowrap;
   }
 
-  .edu-desc {
-    font-size: 10px;
-    color: #666;
-    margin-top: 2px;
-    line-height: 1.5;
-  }
-
-  /* === CERTIFICATIONS === */
-  .cert-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 12px;
-    margin-bottom: 6px;
-  }
-
-  .cert-title {
-    font-size: 10.5px;
-    font-weight: 500;
-    color: #333;
-  }
-
-  .cert-org {
-    color: hsl(270, 70%, 45%);
-  }
-
-  .cert-year {
-    font-size: 10px;
-    color: #777;
-    white-space: nowrap;
-  }
-
   /* === SKILLS === */
   .skills-grid {
     display: flex;
@@ -326,24 +225,14 @@
     font-size: 10.5px;
   }
 
-  /* === PRINT === */
   @media print {
     body {
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-
-    .page {
-      padding: 0;
-    }
   }
 
-  /* === PAGE BREAK CONTROL === */
-  .avoid-break,
-  .job,
-  .project,
-  .edu-item,
-  .cert-item {
+  .avoid-break {
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -354,82 +243,82 @@
 
   <!-- HEADER -->
   <div class="header avoid-break">
-    <h1>Sabastian Benavidez</h1>
+    <h1>SABASTIAN BENAVIDEZ</h1>
     <div class="header-gradient"></div>
     <div class="contact-row">
+      <span>(505) 480-7298</span>
+      <span class="separator">|</span>
       <span>Sabastian.j.Benavidez@gmail.com</span>
       <span class="separator">|</span>
-      <a href="#">LinkedIn</a>
-      
+      <span>Albuquerque, NM (Willing to relocate to Littleton, CO)</span>
       <span class="separator">|</span>
-      <span>Albuquerque, NM</span>
+      <span>Active U.S. Top Secret Clearance</span>
     </div>
   </div>
 
   <!-- PROFESSIONAL SUMMARY -->
   <div class="section avoid-break">
     <div class="section-title">Professional Summary</div>
-    <div class="summary-text">MBA Candidate specializing in Operations and Finance with an Active Top Secret Clearance. Expert in mapping complex enterprise workflows, translating operational needs into technical requirements, and driving operational improvements in secure, high-stakes environments. Proven track record in federal compliance and process optimization at DCSA, applying quantitative modeling and Generative AI research to accelerate digital transformation.</div>
+    <div class="summary-text">
+      MBA Candidate (Finance) with an Active Top Secret Clearance and 5+ years of experience in financial project management and federal operations. Specializing in **Earned Value Management (EVM)** frameworks and enterprise workflow optimization. Proven track record in cost management, financial reporting, and complex problem-solving in high-security environments. Ready to support Lockheed Martin Space NSS programs with precise financial forecasting (EBIT, Sales, Cash) and analytical rigor.
+    </div>
   </div>
 
   <!-- CORE COMPETENCIES -->
   <div class="section">
     <div class="section-title">Core Competencies</div>
     <div class="competencies-grid">
-      <span class="competency-tag">Financial Process Optimization</span><span class="competency-tag">Enterprise Workflow Mapping</span><span class="competency-tag">Federal Compliance & Security</span><span class="competency-tag">Functional Requirement Definition</span><span class="competency-tag">Quantitative Modeling (R, Python)</span><span class="competency-tag">Cost Accounting Principles</span><span class="competency-tag">Cross-functional Collaboration</span><span class="competency-tag">GenAI Implementation Strategy</span>
+      <span class="competency-tag">Earned Value Management (EVM)</span>
+      <span class="competency-tag">Financial Reporting & Forecasting</span>
+      <span class="competency-tag">Cost Management (EBIT/Sales/Cash)</span>
+      <span class="competency-tag">Space Intelligence Operations Support</span>
+      <span class="competency-tag">Federal Policy Compliance</span>
+      <span class="competency-tag">Quantitative Modeling</span>
+      <span class="competency-tag">Resource Allocation</span>
+      <span class="competency-tag">Workflow Optimization</span>
     </div>
   </div>
 
   <!-- WORK EXPERIENCE -->
   <div class="section">
     <div class="section-title">Work Experience</div>
+    
     <div class="job">
       <div class="job-header">
-        <div class="job-company">Defense Counterintelligence and Security Agency (DCSA)</div>
-        <div class="job-period">June 2025 – Present</div>
+        <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
+        <span class="job-period">June 2025 – Present</span>
       </div>
       <div class="job-role">Student Intern (Background Investigations)</div>
-      <div class="job-location">Remote / Hybrid</div>
       <ul>
-        <li><strong>Spearheads federal compliance initiatives</strong> by managing large-scale datasets of sensitive personnel records under strict security protocols.</li>
-        <li><strong>Leverages financial and economic modeling</strong> to evaluate operational workflows, identifying process gaps that drive significant operational improvements.</li>
-        <li><strong>Researches and defines functional IT requirements</strong> for generative AI integration to streamline investigative workflows.</li>
-        <li><strong>Synthesizes complex intelligence data</strong> into strategic financial and operational briefings for internal stakeholders.</li>
+        <li>Applied rigorous analytical principles to identify process gaps in high-stakes operational workflows, driving cost efficiencies and ensuring 100% <strong>federal compliance</strong>.</li>
+        <li>Spearheaded research for generative AI implementations within secure environments, identifying technical requirements for enhanced <strong>analytical problem-solving</strong>.</li>
+        <li>Managed sensitive personnel records with absolute integrity, maintaining audit-ready data postures in a fast-paced environment.</li>
       </ul>
     </div>
+
     <div class="job">
       <div class="job-header">
-        <div class="job-company">Freelance Consulting</div>
-        <div class="job-period">2016 – 2020</div>
+        <span class="job-company">Freelance Consulting</span>
+        <span class="job-period">2016 – 2020</span>
       </div>
       <div class="job-role">Independent Project Manager</div>
-      <div class="job-location">Freelance</div>
       <ul>
-        <li><strong>Directed end-to-end project lifecycles</strong> for diverse clients, managing budgets, operational schedules, and resource allocation.</li>
-        <li><strong>Utilized Adobe Creative Suite and Microsoft Office</strong> to deliver high-impact financial reports under tight deadlines.</li>
+        <li>Directed end-to-end <strong>project lifecycles</strong> for diverse clients, managing <strong>operational budgets</strong>, schedules, and resource allocation with 100% on-time delivery.</li>
+        <li>Developed high-impact financial and operational reports, utilizing data visualization to present complex issues to management.</li>
+        <li>Leveraged analytical tools to mitigate risk and ensure alignment with strict regulatory requirements and client milestones.</li>
       </ul>
     </div>
+
     <div class="job">
       <div class="job-header">
-        <div class="job-company">Kelly Education</div>
-        <div class="job-period">January 2025 – June 2025</div>
+        <span class="job-company">Kelly Education</span>
+        <span class="job-period">January 2025 – June 2025</span>
       </div>
       <div class="job-role">Substitute Teacher</div>
-      <div class="job-location">NM</div>
       <ul>
-        <li><strong>Managed rapid operational shifts</strong> in educational environments, ensuring continuity of service and meeting strict delivery milestones.</li>
-        <li><strong>Translated complex organizational requirements</strong> into actionable directives for diverse groups.</li>
+        <li>Managed rapid operational shifts and complex delivery milestones, ensuring continuity of service through precise planning and execution.</li>
+        <li>Translated institutional requirements into actionable directives for diverse stakeholders in a dynamic environment.</li>
       </ul>
-    </div>
-  </div>
-
-  <!-- PROJECTS -->
-  <div class="section avoid-break">
-    <div class="section-title">Projects</div>
-    <div class="project">
-      <div class="project-title">Generative AI Workflow Integration <span class="project-badge">DCSA</span></div>
-      <div class="project-desc">Researched and defined functional requirements for AI integration at DCSA to optimize federal background investigations.</div>
-      <div class="project-tech">Python, GenAI, Functional Analysis</div>
     </div>
   </div>
 
@@ -438,42 +327,34 @@
     <div class="section-title">Education</div>
     <div class="edu-item">
       <div class="edu-header">
-        <div class="edu-title">Master of Business Administration (MBA) — Specialization in Operations</div>
-        <div class="edu-year">Expected Spring 2026</div>
+        <span class="edu-title">Master of Business Administration (MBA) — Specialization in Finance</span>
+        <span class="edu-year">Expected Spring 2026</span>
       </div>
       <div class="edu-org">University of New Mexico</div>
     </div>
     <div class="edu-item">
       <div class="edu-header">
-        <div class="edu-title">B.S. Business Administration — Marketing & Operations</div>
-        <div class="edu-year">GPA: 4.18</div>
+        <span class="edu-title">B.S. Business Administration — Marketing & Operations (GPA: 4.18)</span>
+        <span class="edu-year">May 2024</span>
       </div>
       <div class="edu-org">University of New Mexico</div>
     </div>
     <div class="edu-item">
       <div class="edu-header">
-        <div class="edu-title">B.S. Economics & History</div>
-        <div class="edu-year">GPA: 4.08</div>
+        <span class="edu-title">B.S. Economics & History (GPA: 4.08)</span>
+        <span class="edu-year">May 2024</span>
       </div>
       <div class="edu-org">University of New Mexico</div>
-    </div>
-  </div>
-
-  <!-- CERTIFICATIONS -->
-  <div class="section avoid-break">
-    <div class="section-title">Certifications</div>
-    <div class="cert-item">
-      <div class="cert-title">Active U.S. Top Secret Clearance</div>
-      <div class="cert-org">U.S. Government</div>
     </div>
   </div>
 
   <!-- SKILLS -->
   <div class="section avoid-break">
-    <div class="section-title">Skills</div>
+    <div class="section-title">Technical Skills</div>
     <div class="skills-grid">
-      <div class="skill-item"><span class="skill-category">Technical:</span> R, Python, Data Visualization, GenAI, Microsoft Office, Adobe Creative Suite</div>
-      <div class="skill-item"><span class="skill-category">Core:</span> Supply Chain Optimization, Financial Modeling, Risk Management, OSINT, PII Security</div>
+      <div class="skill-item"><span class="skill-category">Analysis:</span> EVM Principles, Cost Forecasting (EBIT/Sales/Cash), R, Python, Quantitative Modeling.</div>
+      <div class="skill-item"><span class="skill-category">Systems:</span> COBRA (Knowledge), SAP-adjacent tools, MS Office Suite (Expert), Data Visualization.</div>
+      <div class="skill-item"><span class="skill-category">Operations:</span> Financial Modeling, Workflow Mapping, Audit Readiness, Risk Mitigation.</div>
     </div>
   </div>
 

@@ -1,7 +1,4 @@
 # FEDERAL RESUME: SABASTIAN BENAVIDEZ
-**Target Position:** Human Resources Specialist (GS-07)
-**Agency:** Department of the Air Force
-**Clearance:** Active U.S. Top Secret Clearance
 
 ---
 
@@ -17,7 +14,7 @@
 ## WORK EXPERIENCE
 
 **Defense Counterintelligence and Security Agency (DCSA)**
-**Role:** Student Intern (Background Investigations)
+**Role:** General Student Trainee
 **Dates:** June 2025 – Present
 **Hours per week:** 40
 **Supervisor:** [Name/Contact]
@@ -48,30 +45,16 @@ Perform a variety of routine and structured human resources and compliance dutie
 Managed high-pressure operational environments requiring rapid adaptation and strict adherence to organizational directives.
 - **Communication & Coordination:** Translated complex organizational requirements and educational directives into actionable tasks for diverse groups of 30+ individuals. Ensured that all participants understood their roles and responsibilities to maintain continuity of service.
 - **Project Management:** Managed several simultaneous classroom environments and instructional plans, ensuring that all delivery milestones were met daily while adhering to strict regulatory and educational guidelines.
-- **Conflict Resolution:** Applied basic principles of human relations to manage diverse personalities and resolve conflicts in real-time, ensuring a productive and inclusive environment.
-
----
-
-**Freelance Consulting**
-**Role:** Independent Project Manager
-**Dates:** 2016 – 2020
-**Hours per week:** [Insert Avg Hours]
-**Supervisor:** Self-Employed
-**Salary:** [Insert Average]
-
-**Duties:**
-Directed end-to-end project lifecycles for diverse clients, focusing on operational efficiency and budget maintenance.
-- **Project Management:** Developed and maintained integrated project plans, including scheduling, resource allocation, and budget tracking. Managed multiple projects simultaneously, ensuring that all deliverables were met under tight deadlines.
-- **Analytical Methods:** Used quantitative modeling to assess project performance and formulate solutions for resource bottlenecks. Produced high-impact financial and operational reports to communicate status and variance analysis to clients.
-- **Stakeholder Management:** Coordinated with cross-functional stakeholders to define project scopes and work statements, ensuring that all resulting schedules were aligned with client expectations.
+- Conflict Resolution: Applied basic principles of human relations to manage diverse personalities and resolve conflicts in real-time, ensuring a productive and inclusive environment.
 
 ---
 
 ## EDUCATION
 
-**University of New Mexico** | Albuquerque, NM
+
+University of New Mexico | Albuquerque, NM
 **Master of Business Administration (MBA) — Specialization in Finance**
-Expected Spring 2026
+Graduated
 - **Relevant Coursework:** Human Capital Management, Organizational Design, Public Administration, Corporate Finance, Strategic Management.
 
 **University of New Mexico** | Albuquerque, NM
@@ -101,7 +84,7 @@ Proven through the synthesis of complex data into executive briefings at DCSA an
 Expert in quantitative modeling using R and Python to identify operational gaps. At DCSA, I used these methods to evaluate workflows, gather missing data from disparate sources, and formulate solutions that drove cost efficiencies.
 
 **4. Ability to Manage Several Projects Simultaneously**
-Extensive experience managing multiple end-to-end project lifecycles as a Freelance Project Manager and coordinating diverse tasks in a high-pressure environment at Kelly Education, consistently meeting all deadlines and milestones.
+Proven through the coordination of diverse tasks in a high-pressure environment at Kelly Education and managing complex investigative workflows at DCSA, consistently meeting all deadlines and milestones.
 
 ---
 

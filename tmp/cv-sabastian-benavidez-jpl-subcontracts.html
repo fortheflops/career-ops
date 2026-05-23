@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sabastian Benavidez — CV</title>
+<title>SABASTIAN BENAVIDEZ — CV</title>
 <style>
   @font-face {
     font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    src: url('../fonts/space-grotesk-latin.woff2') format('woff2');
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
@@ -16,16 +16,16 @@
 
   @font-face {
     font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    src: url('../fonts/space-grotesk-latin-ext.woff2') format('woff2');
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;   
   }
 
   @font-face {
     font-family: 'DM Sans';
-    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    src: url('../fonts/dm-sans-latin.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
@@ -34,11 +34,11 @@
 
   @font-face {
     font-family: 'DM Sans';
-    src: url('./fonts/dm-sans-latin-ext.woff2') format('woff2');
+    src: url('../fonts/dm-sans-latin-ext.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;   
   }
 
   * {
@@ -135,11 +135,6 @@
     color: #2f2f2f;
   }
 
-  /* Links must never break across lines */
-  a {
-    white-space: nowrap;
-  }
-
   /* === CORE COMPETENCIES === */
   .competencies-grid {
     display: flex;
@@ -208,45 +203,6 @@
     margin-bottom: 4px;
   }
 
-  .job li strong {
-    font-weight: 600;
-  }
-
-  /* === PROJECTS === */
-  .project {
-    margin-bottom: 12px;
-  }
-
-  .project-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 11.5px;
-    font-weight: 600;
-    color: hsl(270, 70%, 45%);
-  }
-
-  .project-badge {
-    font-size: 9px;
-    font-weight: 500;
-    color: hsl(187, 74%, 32%);
-    background: hsl(187, 40%, 95%);
-    padding: 1px 6px;
-    border-radius: 2px;
-    margin-left: 6px;
-  }
-
-  .project-desc {
-    font-size: 10.5px;
-    color: #444;
-    margin-top: 3px;
-    line-height: 1.55;
-  }
-
-  .project-tech {
-    font-size: 9.5px;
-    color: #888;
-    margin-top: 3px;
-  }
-
   /* === EDUCATION === */
   .edu-item {
     margin-bottom: 8px;
@@ -283,31 +239,6 @@
     line-height: 1.5;
   }
 
-  /* === CERTIFICATIONS === */
-  .cert-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 12px;
-    margin-bottom: 6px;
-  }
-
-  .cert-title {
-    font-size: 10.5px;
-    font-weight: 500;
-    color: #333;
-  }
-
-  .cert-org {
-    color: hsl(270, 70%, 45%);
-  }
-
-  .cert-year {
-    font-size: 10px;
-    color: #777;
-    white-space: nowrap;
-  }
-
   /* === SKILLS === */
   .skills-grid {
     display: flex;
@@ -332,18 +263,9 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-
-    .page {
-      padding: 0;
-    }
   }
 
-  /* === PAGE BREAK CONTROL === */
-  .avoid-break,
-  .job,
-  .project,
-  .edu-item,
-  .cert-item {
+  .avoid-break {
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -354,127 +276,100 @@
 
   <!-- HEADER -->
   <div class="header avoid-break">
-    <h1>Sabastian Benavidez</h1>
+    <h1>SABASTIAN BENAVIDEZ</h1>
     <div class="header-gradient"></div>
     <div class="contact-row">
+      <span>(505) 480-7298</span>
+      <span class="separator">|</span>
       <span>Sabastian.j.Benavidez@gmail.com</span>
       <span class="separator">|</span>
-      <a href="#">LinkedIn</a>
-      
+      <a href="#">linkedin.com/in/sabastian-benavidez</a>
       <span class="separator">|</span>
-      <span>Albuquerque, NM</span>
+      <a href="#">portfolio.sabastian.com</a>
+      <span class="separator">|</span>
+      <span>Pasadena, CA (Relocation Ready)</span>
     </div>
   </div>
 
   <!-- PROFESSIONAL SUMMARY -->
   <div class="section avoid-break">
     <div class="section-title">Professional Summary</div>
-    <div class="summary-text">Compliance-focused professional with Active Top Secret Clearance, specializing in federal policy, financial modeling, and end-to-end operational lifecycle management. Proven track record in mapping complex enterprise workflows and translating operational needs into technical requirements to ensure regulatory adherence and drive operational improvements in high-stakes federal environments.</div>
+    <div class="summary-text">Subcontracts & Acquisition Operations Professional with an MBA specializing in <strong>Operations</strong> and an Active Top Secret Clearance. Expert in managing <strong>subcontract lifecycles</strong> (solicitation to closeout) for high-stakes aerospace missions. Proven track record in federal compliance (DCSA), utilizing <strong>quantitative modeling</strong> to identify process gaps and ensure data-backed integrity for mission-critical procurement in secure environments.</div>
   </div>
 
   <!-- CORE COMPETENCIES -->
   <div class="section">
     <div class="section-title">Core Competencies</div>
     <div class="competencies-grid">
-      <span class="competency-tag">Federal Acquisition & Contract Management</span>
-      <span class="competency-tag">FAR Alignment</span>
-      <span class="competency-tag">Cost/Price Analysis</span>
-      <span class="competency-tag">Lifecycle Management</span>
+      <span class="competency-tag">Subcontract Lifecycle Mgmt</span>
+      <span class="competency-tag">Acquisition Strategy</span>
       <span class="competency-tag">Federal Policy Compliance</span>
-      <span class="competency-tag">TS Clearance</span>
-      <span class="competency-tag">Strategic Sourcing</span>
-      <span class="competency-tag">Risk Mitigation</span>
+      <span class="competency-tag">Negotiation Strategy</span>
+      <span class="competency-tag">Quantitative Modeling (R, Python)</span>
+      <span class="competency-tag">ERP / MRP Strategy</span>
+      <span class="competency-tag">Stakeholder Engagement</span>
     </div>
   </div>
 
   <!-- WORK EXPERIENCE -->
   <div class="section">
     <div class="section-title">Work Experience</div>
-    <div class="job">
-      <div class="job-header">
-        <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
-        <span class="job-period">June 2025 – Present</span>
-      </div>
-      <div class="job-role">Student Intern (Background Investigations)</div>
-      <div class="job-location">Remote / Hybrid</div>
-      <ul>
-        <li><strong>Ensure strict adherence to federal policy and regulatory frameworks</strong> in high-stakes environments, mirroring FAR compliance standards for data and personnel record management.</li>
-        <li><strong>Evaluate operational workflows</strong> to identify process gaps and define requirements that drive significant operational improvements and maintain an 'audit-ready' posture.</li>
-        <li><strong>Research and define functional IT requirements</strong> for generative AI integration, streamlining investigative workflows while ensuring security protocol compliance.</li>
-        <li><strong>Synthesize complex intelligence and operational data</strong> into strategic briefings for internal stakeholders to enable data-backed decision making.</li>
-      </ul>
+      <div class="job">
+    <div class="job-header">
+      <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
+      <span class="job-period">June 2025 – Present</span>
     </div>
-    <div class="job">
-      <div class="job-header">
-        <span class="job-company">Kelly Education</span>
-        <span class="job-period">January 2025 – June 2025</span>
-      </div>
-      <div class="job-role">Substitute Teacher</div>
-      <div class="job-location">Albuquerque, NM</div>
-      <ul>
-        <li>Managed rapid operational shifts in educational environments, ensuring continuity of service and meeting strict delivery milestones.</li>
-        <li>Translated complex organizational requirements into actionable directives for diverse groups of 30+ individuals.</li>
-      </ul>
-    </div>
-    <div class="job">
-      <div class="job-header">
-        <span class="job-company">Freelance Consulting</span>
-        <span class="job-period">2016 – 2020</span>
-      </div>
-      <div class="job-role">Independent Project Manager</div>
-      <div class="job-location">Remote</div>
-      <ul>
-        <li><strong>Managed diverse project portfolios</strong> from initial requirement identification through award, execution, and final closeout for a range of diverse clients.</li>
-        <li><strong>Conducted cost and price analysis</strong> using quantitative modeling to optimize budgets, resource allocation, and overall project ROI.</li>
-        <li>Utilized Adobe Creative Suite and Microsoft Office to deliver high-impact financial reports and project documentation under tight deadlines.</li>
-      </ul>
-    </div>
+    <div class="job-role">Systems Compliance & Acquisition Support Intern</div>
+    <ul>
+      <li>Evaluated existing operational workflows and applied rigorous analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with <strong>federal guidelines</strong>.</li>
+      <li>Drove efficiency by actively researching and gathering functional requirements for generative AI implementations in secure, high-stakes federal environments.</li>
+    </ul>
   </div>
-
-  <!-- PROJECTS -->
-  <div class="section avoid-break">
-    <div class="section-title">Projects</div>
-    <div class="project">
-      <div class="project-title">DCSA Operational Analytics <span class="project-badge">Federal Compliance</span></div>
-      <div class="project-desc">Mapped complex investigative workflows to identify structural gaps, utilizing quantitative modeling to propose reporting solutions that increased operational efficiency and ensured federal regulatory adherence.</div>
-      <div class="project-tech">R, Python, Workflow Mapping, Federal Compliance</div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Kelly Education</span>
+      <span class="job-period">Jan 2025 – June 2025</span>
     </div>
+    <div class="job-role">Operations & Continuity Lead (Substitute)</div>
+    <ul>
+      <li>Managed rapid operational shifts in educational environments, ensuring <strong>continuity of service</strong> through proactive stakeholder coordination and polished communication.</li>
+      <li>Translated complex organizational requirements into actionable directives for diverse groups of 30+ individuals.</li>
+    </ul>
+  </div>
   </div>
 
   <!-- EDUCATION -->
   <div class="section avoid-break">
     <div class="section-title">Education</div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <span class="edu-title">Master of Business Administration (MBA) — Specialization in Finance</span>
-        <span class="edu-year">Expected Spring 2026</span>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
-      <div class="edu-desc">GPA: 4.18 | Focus on Financial Modeling, Cost Analysis & Strategic Operations</div>
+      <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">May 2026</span>
     </div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <span class="edu-title">B.S. Business Administration (Marketing & Operations) & B.S. Economics & History</span>
-        <span class="edu-year">Graduated</span>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
-      <div class="edu-desc">GPA: 4.18 / 4.08 | Honor Societies: Omicron Delta Epsilon, NSLS, NCSC, Golden Key</div>
-    </div>
+    <div class="edu-desc">Master of Business Administration (MBA) — <strong>Specialization in Operations</strong> (GPA: 4.16)</div>
   </div>
-
-  <!-- CERTIFICATIONS -->
-  <div class="section avoid-break">
-    <div class="section-title">Certifications</div>
-    <div class="cert-item"></div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">2024</span>
+    </div>
+    <div class="edu-desc">B.S. Business Administration — Marketing & Operations (GPA: 4.18)</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">2022</span>
+    </div>
+    <div class="edu-desc">B.S. Economics & History (GPA: 4.08)</div>
+  </div>
   </div>
 
   <!-- SKILLS -->
   <div class="section avoid-break">
-    <div class="section-title">Skills</div>
-    <div class="skills-grid">
-      <div class="skill-item"><span class="skill-category">Technical:</span> R, Python, Financial Modeling, MS Office, Adobe Suite, Data Visualization</div>
-      <div class="skill-item"><span class="skill-category">Operations:</span> Federal Policy Compliance, Cost/Price Analysis, Supply Chain Optimization, Risk Management, OSINT, PII Security</div>
-    </div>
+    <div class="section-title">Technical Skills</div>
+      <div class="skill-item"><span class="skill-category">Procurement:</span> Subcontract Drafting, Solicitation, Selection/Award, Oracle ERP, Supply Chain Processes.</div>
+  <div class="skill-item"><span class="skill-category">Data:</span> R, Python, SQL Logic, Quantitative Modeling, Microsoft Office Suite (Expert), Dashboarding.</div>
+  <div class="skill-item"><span class="skill-category">Security:</span> Active Top Secret Clearance, PII Security, Federal Policy, OSINT, National Security Protocols.</div>
   </div>
 
 </div>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sabastian Benavidez — CV</title>
+<title>SABASTIAN BENAVIDEZ — CV</title>
 <style>
   @font-face {
     font-family: 'Space Grotesk';
@@ -20,7 +20,7 @@
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;   
   }
 
   @font-face {
@@ -38,7 +38,7 @@
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;   
   }
 
   * {
@@ -64,9 +64,9 @@
 
   .page {
     width: 100%;
-    max-width: 800px;
+    max-width: 8.5in;
     margin: 0 auto;
-    padding: 40px;
+    padding: 2px 0;
   }
 
   /* === HEADER === */
@@ -133,11 +133,6 @@
     font-size: 11px;
     line-height: 1.7;
     color: #2f2f2f;
-  }
-
-  /* Links must never break across lines */
-  a {
-    white-space: nowrap;
   }
 
   /* === CORE COMPETENCIES === */
@@ -208,45 +203,6 @@
     margin-bottom: 4px;
   }
 
-  .job li strong {
-    font-weight: 600;
-  }
-
-  /* === PROJECTS === */
-  .project {
-    margin-bottom: 12px;
-  }
-
-  .project-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 11.5px;
-    font-weight: 600;
-    color: hsl(270, 70%, 45%);
-  }
-
-  .project-badge {
-    font-size: 9px;
-    font-weight: 500;
-    color: hsl(187, 74%, 32%);
-    background: hsl(187, 40%, 95%);
-    padding: 1px 6px;
-    border-radius: 2px;
-    margin-left: 6px;
-  }
-
-  .project-desc {
-    font-size: 10.5px;
-    color: #444;
-    margin-top: 3px;
-    line-height: 1.55;
-  }
-
-  .project-tech {
-    font-size: 9.5px;
-    color: #888;
-    margin-top: 3px;
-  }
-
   /* === EDUCATION === */
   .edu-item {
     margin-bottom: 8px;
@@ -283,34 +239,6 @@
     line-height: 1.5;
   }
 
-  /* === CERTIFICATIONS === */
-  .cert-item {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(90px, max-content) 44px;
-    align-items: baseline;
-    gap: 12px;
-    margin-bottom: 6px;
-  }
-
-  .cert-title {
-    font-size: 10.5px;
-    font-weight: 500;
-    color: #333;
-    min-width: 0;
-  }
-
-  .cert-org {
-    color: hsl(270, 70%, 45%);
-    white-space: nowrap;
-  }
-
-  .cert-year {
-    font-size: 10px;
-    color: #777;
-    white-space: nowrap;
-    text-align: right;
-  }
-
   /* === SKILLS === */
   .skills-grid {
     display: flex;
@@ -335,18 +263,9 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-
-    .page {
-      padding: 0;
-    }
   }
 
-  /* === PAGE BREAK CONTROL === */
-  .avoid-break,
-  .job,
-  .project,
-  .edu-item,
-  .cert-item {
+  .avoid-break {
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -357,105 +276,110 @@
 
   <!-- HEADER -->
   <div class="header avoid-break">
-    <h1>Sabastian Benavidez</h1>
+    <h1>SABASTIAN BENAVIDEZ</h1>
     <div class="header-gradient"></div>
     <div class="contact-row">
       <span>(505) 480-7298</span>
       <span class="separator">|</span>
-      <span>sabastian.j.benavidez@gmail.com</span>
+      <span>Sabastian.j.Benavidez@gmail.com</span>
       <span class="separator">|</span>
-      <span>Active U.S. Top Secret Clearance</span>
+      <a href="#">linkedin.com/in/sabastian-benavidez</a>
       <span class="separator">|</span>
-      <span>Costa Mesa, CA (Relocating from Albuquerque, NM)</span>
+      <a href="#">portfolio.sabastian.com</a>
+      <span class="separator">|</span>
+      <span>Los Angeles, CA (Relocation Ready)</span>
     </div>
   </div>
 
   <!-- PROFESSIONAL SUMMARY -->
   <div class="section avoid-break">
     <div class="section-title">Professional Summary</div>
-    <div class="summary-text">Highly analytical MBA (Finance & Operations) with an <strong>Active Top Secret Clearance</strong> and expertise in <strong>quantitative modeling (R, Python, Excel)</strong> for aerospace and defense. Demonstrated success in optimizing operational workflows and aligning financial requirements with technical execution. Eager to apply skills in <strong>Program Finance, cost tracking, and variance analysis</strong> to support Anduril's mission-driven growth. Deeply interested in leveraging <strong>Anaplan and Foundry</strong> for data-driven decision making and ensuring compliance with <strong>FAR/CAS</strong> standards.</div>
+    <div class="summary-text">Finance & Strategy Operations Specialist with an MBA specializing in <strong>Finance</strong> and an Active Top Secret Clearance. Expert in <strong>financial impact modeling</strong>, opportunity sizing, and building strategic impact frameworks for complex product platforms. Proven track record in federal compliance (DCSA), utilizing <strong>quantitative modeling (R/Python)</strong> to identify revenue-driving insights and ensure data-backed integrity in fast-paced environments.</div>
   </div>
 
   <!-- CORE COMPETENCIES -->
   <div class="section">
     <div class="section-title">Core Competencies</div>
     <div class="competencies-grid">
-      <span class="competency-tag">Program Finance</span>
-      <span class="competency-tag">Cost Tracking</span>
-      <span class="competency-tag">Variance Analysis</span>
-      <span class="competency-tag">EVM</span>
-      <span class="competency-tag">FAR/CAS Compliance</span>
-      <span class="competency-tag">Month-end Close</span>
-      <span class="competency-tag">Accruals</span>
-      <span class="competency-tag">Quantitative Modeling</span>
-      <span class="competency-tag">Workflow Optimization</span>
-      <span class="competency-tag">Requirement Gathering</span>
+      <span class="competency-tag">Financial Impact Modeling</span>
+      <span class="competency-tag">Opportunity Sizing</span>
+      <span class="competency-tag">Strategic Thought Partnership</span>
+      <span class="competency-tag">Revenue Analysis</span>
+      <span class="competency-tag">Quantitative Modeling (R, Python)</span>
+      <span class="competency-tag">Stakeholder Alignment</span>
+      <span class="competency-tag">Data Visualization (Tableau/Power BI)</span>
     </div>
   </div>
 
   <!-- WORK EXPERIENCE -->
   <div class="section">
-    <div class="section-title">Professional Experience</div>
-    <div class="job">
-      <div class="job-header">
-        <div class="job-company">Defense Counterintelligence and Security Agency (DCSA)</div>
-        <div class="job-period">June 2025 – Present</div>
-      </div>
-      <div class="job-role">General Student Trainee</div>
-      <ul>
-        <li>Evaluated existing operational workflows and applied rigorous analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with federal guidelines</li>
-        <li>Drove efficiency by actively researching and gathering functional requirements for generative AI implementations.</li>
-      </ul>
+    <div class="section-title">Work Experience</div>
+      <div class="job">
+    <div class="job-header">
+      <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
+      <span class="job-period">June 2025 – Present</span>
     </div>
-
-    <div class="job">
-      <div class="job-header">
-        <div class="job-company">Kelly Education</div>
-        <div class="job-period">January 2025 – June 2025</div>
-      </div>
-      <div class="job-role">Substitute Teacher</div>
-      <ul>
-        <li><strong>Operations Coordination:</strong> Managed stakeholder expectations and guided diverse groups of 30+ individuals daily, demonstrating the "persuasion and motivation" required for floor-level adoption of new processes.</li>
-        <li><strong>Documentation & Training:</strong> Provided ongoing support and clear instructional directives to ensure continuity of service during rapid shifts in institutional requirements.</li>
-      </ul>
+    <div class="job-role">General Student Trainee (Federal)</div>
+    <ul>
+      <li>Evaluated existing operational workflows and applied rigorous analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with <strong>federal guidelines</strong>.</li>
+      <li>Drove efficiency by actively researching and gathering functional requirements for generative AI implementations in high-stakes secure environments.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Strategy & Project Operations Consultant</span>
+      <span class="job-period">2016 – 2020</span>
     </div>
+    <div class="job-role">Independent Project Manager</div>
+    <ul>
+      <li>Directed end-to-end <strong>project lifecycles</strong> for diverse clients, synthesizing complex datasets to develop actionable financial insights, impact frameworks, and budget recommendations.</li>
+      <li>Utilized <strong>quantitative modeling</strong> to deliver high-impact strategic reports and revenue projections under tight deadlines, ensuring resource optimization and stakeholder success.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Kelly Education</span>
+      <span class="job-period">Jan 2025 – June 2025</span>
+    </div>
+    <div class="job-role">Operations & Continuity Lead (Substitute)</div>
+    <ul>
+      <li>Managed rapid operational shifts in high-pressure environments, ensuring <strong>continuity of service</strong> through proactive stakeholder coordination and polished communication for diverse groups.</li>
+    </ul>
+  </div>
   </div>
 
   <!-- EDUCATION -->
   <div class="section avoid-break">
     <div class="section-title">Education</div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <div class="edu-title">Master of Business Administration (MBA) — Finance & Operations</div>
-        <div class="edu-year">Graduated | GPA: 4.16</div>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
+      <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">May 2026</span>
     </div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <div class="edu-title">B.S. Business Administration — Marketing & Operations</div>
-        <div class="edu-year">May 2024 | GPA: 4.18</div>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
+    <div class="edu-desc">Master of Business Administration (MBA) — <strong>Specialization in Finance</strong> (GPA: 4.16)</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">2024</span>
     </div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <div class="edu-title">B.S. Economics & History</div>
-        <div class="edu-year">May 2024 | GPA: 4.08</div>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
+    <div class="edu-desc">B.S. Business Administration — Marketing & Operations (GPA: 4.18)</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">2022</span>
     </div>
+    <div class="edu-desc">B.S. Economics & History (GPA: 4.08)</div>
+  </div>
   </div>
 
   <!-- SKILLS -->
   <div class="section avoid-break">
     <div class="section-title">Technical Skills</div>
-    <div class="skills-grid">
-      <div class="skill-item"><span class="skill-category">Analytical Tools:</span> R, Python, Quantitative Modeling, advanced Excel (Pivot Tables, Macros)</div>
-      <div class="skill-item"><span class="skill-category">Business Systems:</span> ERP/WMS concepts, Anaplan/Foundry (Interest)</div>
-      <div class="skill-item"><span class="skill-category">Operations:</span> Workflow Optimization, Requirement Gathering, Cross-functional Coordination</div>
-      <div class="skill-item"><span class="skill-category">Compliance:</span> Active Top Secret Clearance, FAR, CAS</div>
-    </div>
+      <div class="skill-item"><span class="skill-category">Strategy:</span> Financial Modeling, Opportunity Sizing, Revenue Strategy, Product Development Lifecycle, SQL.</div>
+  <div class="skill-item"><span class="skill-category">Data:</span> R, Python, Advanced Excel (80/20 Analysis), Tableau, Quantitative Modeling, AI Prompt Engineering.</div>
+  <div class="skill-item"><span class="skill-category">Trust:</span> Active Top Secret Clearance, PII Security, Federal Policy, OSINT, Cross-functional Leadership.</div>
   </div>
 
 </div>

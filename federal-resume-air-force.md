@@ -1,7 +1,4 @@
 # FEDERAL RESUME: SABASTIAN BENAVIDEZ
-**Target Position:** Human Resources Specialist (GS-07)
-**Agency:** Department of the Air Force
-**Clearance:** Active U.S. Top Secret Clearance
 
 ---
 
@@ -15,14 +12,14 @@
 ---
 
 ## PROFESSIONAL SUMMARY
-MBA Candidate specializing in Organizational Effectiveness and Public Service with an Active Top Secret Clearance. Expert in mapping complex enterprise workflows, driving organizational change, and translating operational needs into human capital requirements. Proven track record in federal compliance at the Defense Counterintelligence and Security Agency (DCSA), utilizing quantitative modeling to optimize process efficiencies and support the operational readiness of the force.
+MBA specializing in Organizational Effectiveness and Public Service with an Active Top Secret Clearance. Expert in mapping complex enterprise workflows, driving organizational change, and translating operational needs into human capital requirements. Proven track record in federal compliance at the Defense Counterintelligence and Security Agency (DCSA), utilizing quantitative modeling to optimize process efficiencies and support the operational readiness of the force.
 
 ---
 
 ## WORK EXPERIENCE
 
 **Defense Counterintelligence and Security Agency (DCSA)** | June 2025 – Present
-**Student Intern (Background Investigations)** | 40 Hours/week
+**General Student Trainee** | 40 Hours/week
 - Evaluated existing operational workflows and applied rigorous analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with federal guidelines.
 - Drove efficiency by actively researching and gathering functional requirements for generative AI implementations.
 - Managed sensitive personnel records under strict security protocols, ensuring 100% accuracy and adherence to federal data privacy and security regulations.
@@ -41,8 +38,8 @@ MBA Candidate specializing in Organizational Effectiveness and Public Service wi
 
 ## EDUCATION
 
-**University of New Mexico** | Expected Spring 2026
-**Master of Business Administration (MBA) — Specialization in Finance**
+**University of New Mexico** | Graduated
+**Master of Business Administration (MBA) — Specialization in Operations**
 - Relevant Coursework: Human Capital Management, Organizational Design, Public Administration.
 
 **University of New Mexico** | May 2024
@@ -68,7 +65,7 @@ Proven through the translation of organizational requirements into actionable di
 Expert in quantitative modeling using R and Python to identify operational gaps. At DCSA, utilized these methods to evaluate workflows and formulate solutions that drove cost efficiencies.
 
 **4. Ability to Manage Several Projects Simultaneously**
-Extensive experience managing multiple end-to-end project lifecycles as a Freelance Project Manager and coordinating diverse tasks in a high-pressure environment at Kelly Education.
+Proven through the coordination of diverse tasks in a high-pressure environment at Kelly Education and managing complex investigative workflows at DCSA.
 
 ---
 

@@ -17,6 +17,8 @@ June 2025 – Present
 Support digital enhancement and optimization processes for federal background investigation workflows, ensuring operational integrity and system efficiency.
 - Evaluated existing operational workflows and applied rigorous analytical principles to identify process gaps, driving cost efficiencies and supporting strict compliance with federal guidelines
 - Drove efficiency by actively researching and gathering functional requirements for generative AI implementations.
+- **System Liaison:** Partnered with technical and IT teams to translate complex regulatory requirements into actionable system enhancements and streamlined investigative paths.
+- **Change Management:** Facilitated the adoption of new system features through thorough documentation and stakeholder briefings, ensuring 100% adherence to new operational protocols.
 
 **Freelance Consulting** | Remote
 **Independent Project Manager (Media)**

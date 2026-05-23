@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sabastian Benavidez — CV</title>
+<title>SABASTIAN BENAVIDEZ — CV</title>
 <style>
   @font-face {
     font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    src: url('../fonts/space-grotesk-latin.woff2') format('woff2');
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
@@ -16,16 +16,16 @@
 
   @font-face {
     font-family: 'Space Grotesk';
-    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    src: url('../fonts/space-grotesk-latin-ext.woff2') format('woff2');
     font-weight: 300 700;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;   
   }
 
   @font-face {
     font-family: 'DM Sans';
-    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    src: url('../fonts/dm-sans-latin.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
@@ -34,11 +34,11 @@
 
   @font-face {
     font-family: 'DM Sans';
-    src: url('./fonts/dm-sans-latin-ext.woff2') format('woff2');
+    src: url('../fonts/dm-sans-latin-ext.woff2') format('woff2');
     font-weight: 100 1000;
     font-style: normal;
     font-display: swap;
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;   
   }
 
   * {
@@ -135,6 +135,7 @@
     color: #2f2f2f;
   }
 
+  /* Links must never break across lines */
   a {
     white-space: nowrap;
   }
@@ -284,8 +285,8 @@
 
   /* === CERTIFICATIONS === */
   .cert-item {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(90px, max-content) 44px;
     align-items: baseline;
     gap: 12px;
     margin-bottom: 6px;
@@ -295,16 +296,19 @@
     font-size: 10.5px;
     font-weight: 500;
     color: #333;
+    min-width: 0;
   }
 
   .cert-org {
     color: hsl(270, 70%, 45%);
+    white-space: nowrap;
   }
 
   .cert-year {
     font-size: 10px;
     color: #777;
     white-space: nowrap;
+    text-align: right;
   }
 
   /* === SKILLS === */
@@ -325,16 +329,19 @@
     font-size: 10.5px;
   }
 
+  /* === PRINT === */
   @media print {
     body {
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
+
     .page {
       padding: 0;
     }
   }
 
+  /* === PAGE BREAK CONTROL === */
   .avoid-break,
   .job,
   .project,
@@ -350,13 +357,16 @@
 
   <!-- HEADER -->
   <div class="header avoid-break">
-    <h1>Sabastian Benavidez</h1>
+    <h1>SABASTIAN BENAVIDEZ</h1>
     <div class="header-gradient"></div>
     <div class="contact-row">
+      <span>(505) 480-7298</span>
+      <span class="separator">|</span>
       <span>Sabastian.j.Benavidez@gmail.com</span>
       <span class="separator">|</span>
-      <a href="#">LinkedIn</a>
-      
+      <a href="#">linkedin.com/in/sabastian-benavidez</a>
+      <span class="separator">|</span>
+      <a href="#">portfolio.sabastian.com</a>
       <span class="separator">|</span>
       <span>Albuquerque, NM</span>
     </div>
@@ -365,115 +375,113 @@
   <!-- PROFESSIONAL SUMMARY -->
   <div class="section avoid-break">
     <div class="section-title">Professional Summary</div>
-    <div class="summary-text">Defense-focused Analyst and MBA Candidate with an active Top Secret Clearance. Expert in leveraging quantitative modeling (R, Python) and federal compliance to support program execution and operational optimization. Proven track record at DCSA in mapping complex workflows and implementing AI-enabled analytical automation to streamline government investigative processes and support defense acquisition goals.</div>
+    <div class="summary-text">MBA Candidate with an Active Top Secret Clearance. Expert in strategic communications, visual design, and user-centered workflow optimization for high-stakes federal environments. Leveraging 4+ years of marketing consulting and background investigations (DCSA) to design data-backed outreach materials and drive cross-functional compliance in the defense sector.</div>
   </div>
 
   <!-- CORE COMPETENCIES -->
   <div class="section">
     <div class="section-title">Core Competencies</div>
     <div class="competencies-grid">
-      <span class="competency-tag">Defense Acquisition Support</span>
-      <span class="competency-tag">Program Management (PM)</span>
-      <span class="competency-tag">Federal Policy Compliance</span>
-      <span class="competency-tag">Top Secret Clearance</span>
-      <span class="competency-tag">Analytical Automation (AI)</span>
-      <span class="competency-tag">Quantitative Modeling (R, Python)</span>
-      <span class="competency-tag">Power BI & Data Visualization</span>
-      <span class="competency-tag">Financial Management</span>
+      <span class="competency-tag">Strategic Communications</span>
+      <span class="competency-tag">User-Centered Design</span>
+      <span class="competency-tag">User Research</span>
+      <span class="competency-tag">Adobe Creative Suite</span>
+      <span class="competency-tag">Visual Storytelling</span>
+      <span class="competency-tag">Operational Security</span>
+      <span class="competency-tag">Workflow Optimization</span>
     </div>
   </div>
 
   <!-- WORK EXPERIENCE -->
   <div class="section">
     <div class="section-title">Work Experience</div>
-    <div class="job">
-      <div class="job-header">
-        <div class="job-company">Defense Counterintelligence and Security Agency (DCSA)</div>
-        <div class="job-period">June 2025 – Present</div>
-      </div>
-      <div class="job-role">Student Intern (Background Investigations)</div>
-      <div class="job-location">Remote / Hybrid</div>
-      <ul>
-        <li>Spearheads <strong>federal compliance initiatives</strong> and program execution by managing large-scale datasets of sensitive personnel records under strict security protocols.</li>
-        <li>Leverages quantitative modeling to evaluate operational workflows, identifying process gaps that drive <strong>significant operational improvements</strong> in a high-stakes federal environment.</li>
-        <li>Researches and defines functional IT requirements for <strong>AI-enabled analytical automation</strong> to streamline investigative workflows and enhance program execution.</li>
-        <li>Synthesizes complex intelligence and operational data into strategic briefings for internal stakeholders to optimize <strong>resource allocation and program scheduling</strong>.</li>
-      </ul>
+      <div class="job">
+    <div class="job-header">
+      <span class="job-company">Defense Counterintelligence and Security Agency (DCSA)</span>
+      <span class="job-period">June 2025 – Present</span>
     </div>
-    <div class="job">
-      <div class="job-header">
-        <div class="job-company">Kelly Education</div>
-        <div class="job-period">January 2025 – June 2025</div>
-      </div>
-      <div class="job-role">Substitute Teacher</div>
-      <div class="job-location">New Mexico</div>
-      <ul>
-        <li>Managed rapid operational shifts in educational environments, ensuring continuity of service and meeting strict delivery milestones.</li>
-        <li>Translated complex organizational requirements into actionable directives for diverse groups of 30+ individuals.</li>
-      </ul>
+    <div class="job-role">Student Intern (Operations & Communications Support)</div>
+    <ul>
+      <li>Optimized operational workflows within secure environments, using analytical principles to identify process gaps and drive <strong>mission-critical communication</strong> efficiency.</li>
+      <li>Conducted <strong>user research</strong> and gathered functional requirements for generative AI implementations, bridging the gap between technical teams and end-users.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Marketing & Strategic Communications Consultant</span>
+      <span class="job-period">2016 – 2020</span>
     </div>
-    <div class="job">
-      <div class="job-header">
-        <div class="job-company">Freelance Consulting</div>
-        <div class="job-period">2016 – 2020</div>
-      </div>
-      <div class="job-role">Independent Project Manager</div>
-      <div class="job-location">Freelance</div>
-      <ul>
-        <li>Directed end-to-end project lifecycles, managing budgets, operational schedules, and resource allocation for diverse clients.</li>
-        <li>Utilized Adobe Creative Suite and Microsoft Office to deliver high-impact marketing and financial reports under tight deadlines.</li>
-      </ul>
+    <div class="job-role">Independent Project Manager</div>
+    <ul>
+      <li>Directed end-to-end <strong>strategic communication</strong> lifecycles for diverse clients, managing budgets and complex outreach schedules.</li>
+      <li>Utilized <strong>Adobe Creative Suite</strong> to deliver high-impact marketing, graphics, and visual reports under tight federal-level deadlines.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Kelly Education</span>
+      <span class="job-period">Jan 2025 – June 2025</span>
     </div>
+    <div class="job-role">Substitute Teacher / Stakeholder Management</div>
+    <ul>
+      <li>Managed rapid operational shifts, ensuring <strong>continuity of service</strong> and meeting delivery milestones through proactive communication.</li>
+      <li>Translated complex requirements into actionable <strong>directives and briefings</strong> for diverse groups of 30+ individuals.</li>
+    </ul>
+  </div>
   </div>
 
   <!-- PROJECTS -->
   <div class="section avoid-break">
     <div class="section-title">Projects</div>
     <div class="project">
-      <div class="project-title">Analytical Automation for Defense Ops <span class="project-badge">DCSA</span></div>
-      <div class="project-desc">Developed a roadmap for integrating Generative AI into federal investigative workflows, focusing on reducing manual data processing time and improving analytical accuracy.</div>
-      <div class="project-tech">Python, GenAI, Workflow Mapping</div>
+      <div class="project-title">Federal Workflow Re-engineering <span class="project-badge">Security</span></div>
+      <div class="project-desc">Identified and mitigated process gaps in AI-assisted auditing tools at DCSA, ensuring 100% compliance with data security protocols.</div>
+      <div class="project-tech">Tech: Python, R, Operational Security (OPSEC)</div>
     </div>
   </div>
 
   <!-- EDUCATION -->
   <div class="section avoid-break">
     <div class="section-title">Education</div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <div class="edu-title">Master of Business Administration (MBA) — Specialization in Finance</div>
-        <div class="edu-year">Expected Spring 2026</div>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
-      <div class="edu-desc">GPA: 4.18 (B.S. Business Admin) / 4.08 (B.S. Economics)</div>
+      <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">May 2026</span>
     </div>
-    <div class="edu-item">
-      <div class="edu-header">
-        <div class="edu-title">B.S. Business Administration (Marketing & Operations) & B.S. Economics & History</div>
-        <div class="edu-year">2024</div>
-      </div>
-      <div class="edu-org">University of New Mexico</div>
+    <div class="edu-desc">Master of Business Administration (MBA) — <strong>Specialization in Operations</strong> (Marketing Emphasis)</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">2024</span>
     </div>
+    <div class="edu-desc">B.S. Business Administration — <strong>Marketing & Operations</strong> (GPA: 4.18)</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title"><span class="edu-org">University of New Mexico</span></span>
+      <span class="edu-year">2022</span>
+    </div>
+    <div class="edu-desc">B.S. Economics & History (GPA: 4.08)</div>
+  </div>
   </div>
 
   <!-- CERTIFICATIONS -->
   <div class="section avoid-break">
-    <div class="section-title">Certifications</div>
-    <div class="cert-item">
-      <div class="cert-title">Active U.S. Top Secret Clearance</div>
-      <div class="cert-org">US Government</div>
-      <div class="cert-year">Active</div>
-    </div>
+    <div class="section-title">Honors</div>
+      <div class="cert-item">
+    <span class="cert-title">Omicron Delta Epsilon (Economics Honor Society)</span>
+    <span class="cert-org">UNM</span>
+    <span class="cert-year">2024</span>
+  </div>
   </div>
 
   <!-- SKILLS -->
   <div class="section avoid-break">
-    <div class="section-title">Skills</div>
-    <div class="skills-grid">
-      <div class="skill-item"><span class="skill-category">Technical:</span> R, Python, Advanced Excel, SQL, Power BI, Tableau</div>
-      <div class="skill-item"><span class="skill-category">Security:</span> Active Top Secret Clearance, PII Data Security, OSINT</div>
-      <div class="skill-item"><span class="skill-category">Acquisition:</span> Federal Policy Compliance, Program Management, Risk Mitigation, Budgeting</div>
-    </div>
+    <div class="section-title">Technical Skills</div>
+      <div class="skill-item"><span class="skill-category">Tools:</span> Adobe Creative Suite (Expert), Figma (Adaptive), Microsoft 365, Atlassian (Jira/Confluence).</div>
+  <div class="skill-item"><span class="skill-category">Data:</span> R, Python, Data Visualization, Quantitative Modeling, AI Prompt Engineering.</div>
+  <div class="skill-item"><span class="skill-category">Compliance:</span> Active Top Secret Clearance, PII Data Security, Federal Policy, OSINT.</div>
   </div>
 
 </div>
